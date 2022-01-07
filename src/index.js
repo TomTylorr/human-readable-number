@@ -135,13 +135,13 @@ module.exports = function toReadable (number) {
             if (arr[1] == 0) {
                 string = string.slice(1);
             }
-            return value1 + " " + hundred + " " + oneTwenty(string);
+            return (value1 + " " + hundred + " " + oneTwenty(string)).trim();
         }
         let string = arr.join('');
         string = string.slice(1);
         number = +string;
         console.log(number);
-        return value1 + " " + hundred + " " + twentyNinety(number, arr[2]);
+        return (value1 + " " + hundred + " " + twentyNinety(number, arr[2])).trim();
     }
 
 
