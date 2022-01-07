@@ -96,6 +96,7 @@ module.exports = function toReadable (number) {
             case '7': return seven;
             case '8': return eight;
             case '9': return nine;
+            case '0': return "";
         }
     }
     let twentyNinetyValue = twentyNinety(number);
